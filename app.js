@@ -31,3 +31,9 @@ var stringUpperCase = stringLowerCase.toUpperCase();
 
 var normalString = 'Diego Armando Maradona';
 var fiveCharString = normalString.substring(0,5);
+
+/* c - Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo 
+        string con los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
+
+var normalString2 = 'Diego Armando Maradona';
+var lastThreeChar = normalString.substring(normalString2.length - 3 , normalString2.length);
