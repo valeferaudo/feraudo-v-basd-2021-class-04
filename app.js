@@ -37,3 +37,10 @@ var fiveCharString = normalString.substring(0,5);
 
 var normalString2 = 'Diego Armando Maradona';
 var lastThreeChar = normalString.substring(normalString2.length - 3 , normalString2.length);
+
+/* d - Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula 
+        y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +). */
+
+var longWord = 'valentin feraudo Haciendo EjerCIcIos';
+var newLongWord = longWord.substring(0,1).toUpperCase() + longWord.substring(1,longWord.length).toLowerCase();
+
