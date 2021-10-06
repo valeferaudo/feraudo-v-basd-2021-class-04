@@ -44,3 +44,9 @@ var lastThreeChar = normalString.substring(normalString2.length - 3 , normalStri
 var longWord = 'valentin feraudo Haciendo EjerCIcIos';
 var newLongWord = longWord.substring(0,1).toUpperCase() + longWord.substring(1,longWord.length).toLowerCase();
 
+/* e - Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. 
+        Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf). */
+    
+var stringWithSpaces = "Resultado debe ser 9";
+var indexOfFirstSpace = stringWithSpaces.indexOf(' ');
+
