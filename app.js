@@ -25,3 +25,9 @@ var totalChar = firstWord.length + secondWord.length;
 
 var stringLowerCase = 'Mi pueblo se llama San Vicente';
 var stringUpperCase = stringLowerCase.toUpperCase();
+
+/* b - Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con 
+        los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring). */
+
+var normalString = 'Diego Armando Maradona';
+var fiveCharString = normalString.substring(0,5);
