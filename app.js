@@ -47,6 +47,15 @@ var newLongWord = longWord.substring(0,1).toUpperCase() + longWord.substring(1,l
 /* e - Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. 
         Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf). */
     
-var stringWithSpaces = "Resultado debe ser 9";
+var stringWithSpaces = 'Resultado debe ser 9';
 var indexOfFirstSpace = stringWithSpaces.indexOf(' ');
+
+/* f - Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos
+         de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en mayúscula y 
+         las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +). */
+
+var longStringWithSpaces = 'valentin feraudo';
+var newLongStringWithSpaces = longStringWithSpaces.substring(0,1).toUpperCase() + longStringWithSpaces.substring(1,longStringWithSpaces.indexOf(' ')).toLowerCase() + ' ' 
+                                + longStringWithSpaces.substring(longStringWithSpaces.indexOf(' ') + 1, longStringWithSpaces.indexOf(' ') + 2).toUpperCase()
+                                + longStringWithSpaces.substring(longStringWithSpaces.indexOf(' ') + 2, longStringWithSpaces.length).toLowerCase();
 
