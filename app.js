@@ -73,3 +73,7 @@ console.log(monthArray)
 // c - Agregar un elemento al principio y al final del array (utilizar unshift y push).
 monthArray.unshift('Primer');
 monthArray.push('Ultimo');
+
+// d - Quitar un elemento del principio y del final del array (utilizar shift y pop).
+monthArray.shift();
+monthArray.pop();
