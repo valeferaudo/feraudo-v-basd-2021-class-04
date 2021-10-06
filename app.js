@@ -147,3 +147,10 @@ for (let i = 0; i < names2.length; i++) {
         window.alert(names[i].substring(0,1).toUpperCase() + names[i].substring(1,names[i].lenght));
 }
 
+/* c - Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir 
+        guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa. */
+var sentence = '';
+for (let i = 0; i < names.length; i++) {
+        sentence = sentence + names[i];
+}
+window.alert(sentence);
