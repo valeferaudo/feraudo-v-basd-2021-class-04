@@ -140,3 +140,10 @@ var names = ['Valentin', 'German', 'Eugenio', 'Baltazar', 'Agustin'];
 for (let i = 0; i < names.length; i++) {
         window.alert(names[i]);
 }
+
+// b - Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.
+var names2 = ['valentin', 'german', 'eugenio', 'baltazar', 'agustin'];
+for (let i = 0; i < names2.length; i++) {
+        window.alert(names[i].substring(0,1).toUpperCase() + names[i].substring(1,names[i].lenght));
+}
+
