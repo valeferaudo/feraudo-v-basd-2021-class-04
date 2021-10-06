@@ -77,3 +77,7 @@ monthArray.push('Ultimo');
 // d - Quitar un elemento del principio y del final del array (utilizar shift y pop).
 monthArray.shift();
 monthArray.pop();
+
+// e - Invertir el orden del array (utilizar reverse).
+monthArray.reverse();
+
