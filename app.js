@@ -172,3 +172,19 @@ function suma(num1, num2) {
 }
 var result = suma(5,16);
 console.log(result);
+
+/* b - A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es un número, 
+        mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el valor NaN como resultado.*/
+function sumaValidator(num1, num2) {
+        if (typeof(num1) !== 'number' || typeof(num2) !== 'number'){
+                return NaN;
+        }
+        else{
+                return num1 + num2;
+        }
+}
+var result = sumaValidator('a',16);
+console.log(result);
+var result = sumaValidator(16,16);
+console.log(result);
+
