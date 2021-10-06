@@ -18,3 +18,10 @@ var nameLastNameSplit = `${_name} ${lastName}`
 var firstWord = 'Diego';
 var secondWord = 'Maradona';
 var totalChar = firstWord.length + secondWord.length;
+
+
+// 2 - Strings
+// a - Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).
+
+var stringLowerCase = 'Mi pueblo se llama San Vicente';
+var stringUpperCase = stringLowerCase.toUpperCase();
