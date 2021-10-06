@@ -88,4 +88,15 @@ var monthString = monthArray.join('-');
 // g - Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
 
 var monthArray2 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-var sliceArray = monthArray2.slice(monthArray2.indexOf('Mayo'),monthArray2.indexOf('Noviembre') + 1)
+var sliceArray = monthArray2.slice(monthArray2.indexOf('Mayo'),monthArray2.indexOf('Noviembre') + 1);
+
+// 4 - IF ELSE
+/* a - Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), 
+        si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”.*/
+var x = Math.random();
+if (x >= 0.5){
+        window.alert('Greater than 0.5');
+} else {
+        window.alert('Lower than 0.5');
+}
+
