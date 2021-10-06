@@ -188,3 +188,9 @@ console.log(result);
 var result = sumaValidator(16,16);
 console.log(result);
 
+// c - Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero.
+function validateInteger(num){
+        return typeof(num) === 'number';
+}
+console.log(validateInteger(10));
+console.log(validateInteger('&'));
