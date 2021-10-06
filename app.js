@@ -81,3 +81,5 @@ monthArray.pop();
 // e - Invertir el orden del array (utilizar reverse).
 monthArray.reverse();
 
+// f - Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
+var monthString = monthArray.join('-');
