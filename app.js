@@ -111,23 +111,32 @@ if (x >= 0.5){
 
 var age = Math.floor(Math.random() * 100);
 if (age < 2){
-        window.alert('Bebe')
+        window.alert('Bebe');
 }
 else if (age >= 2 && age <= 12){
-        window.alert('Niño')
+        window.alert('Niño');
 }
 else if (age >= 13 && age <= 19){
-        window.alert('Adolescente')
+        window.alert('Adolescente');
 }
 else if (age >= 20 && age <= 30){
-        window.alert('Joven')
+        window.alert('Joven');
 }
 else if (age >= 31 && age <= 60){
-        window.alert('Adulto')
+        window.alert('Adulto');
 }
 else if (age >= 61 && age <= 75){
-        window.alert('Adulto mayor')
+        window.alert('Adulto mayor');
 }
 else if (age > 75){
-        window.alert('Anciano')
+        window.alert('Anciano');
+}
+
+// 5 - FOR
+/* a - Crear un array que contenga 5 palabras y 
+        recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.*/
+
+var names = ['Valentin', 'German', 'Eugenio', 'Baltazar', 'Agustin'];
+for (let i = 0; i < names.length; i++) {
+        window.alert(names[i]);
 }
