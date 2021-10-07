@@ -219,3 +219,20 @@ function validateDecimal(num) {
 console.log(sumaValidator2(1.5,5));
 console.log(sumaValidator2(1,5.5));
 console.log(sumaValidator2(10,5));
+
+// e - Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
+function sumaValidator3(num1, num2) {
+        if (validateNumber(num1) || validateNumber(num2)){
+                return NaN;
+        }
+        else{
+                return num1 + num2;
+        }
+}
+function validateNumber(num) {
+        return typeof(num) !== 'number';
+}
+var result = sumaValidator3('a',16);
+console.log(result);
+var result = sumaValidator3(16,16);
+console.log(result);
