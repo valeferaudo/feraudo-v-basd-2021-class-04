@@ -194,3 +194,28 @@ function validateInteger(num){
 }
 console.log(validateInteger(10));
 console.log(validateInteger('&'));
+
+/* d - A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. 
+        En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).*/
+function sumaValidator2(num1, num2) {
+        if (typeof(num1) !== 'number' || typeof(num2) !== 'number'){
+                return NaN;
+        }
+        else{
+                num1 = validateDecimal(num1);
+                num2 = validateDecimal(num2);
+                return num1 + num2;
+        }
+}
+function validateDecimal(num) {
+        if(num % 1 !== 0){
+                window.alert(`El numero ${num} tiene decimales. Su redondeado es ${Math.round(num)}`);
+                return Math.round(num);
+        }else{
+                return num
+        }
+}
+
+console.log(sumaValidator2(1.5,5));
+console.log(sumaValidator2(1,5.5));
+console.log(sumaValidator2(10,5));
