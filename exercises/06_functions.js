@@ -14,6 +14,7 @@ console.log(result);
 console.log('Ejercicio 6-b');
 function sumaValidator(num1, num2) {
     if (typeof(num1) !== 'number' || typeof(num2) !== 'number'){
+        console.log('Un parámetro tiene error');
         return NaN;
     }
     else{
@@ -35,7 +36,7 @@ console.log(validateInteger(10.4568));
 /* d - A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. 
         En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).*/
 
-console.log('Ejercicio 6-f');
+console.log('Ejercicio 6-d');
 function sumaValidator2(num1, num2) {
     if (typeof(num1) !== 'number' || typeof(num2) !== 'number'){
         return NaN;

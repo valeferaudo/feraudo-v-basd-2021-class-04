@@ -4,15 +4,579 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./exercises/01_variables_and_operators.js"></script>
-    <script src="./exercises/02_strings.js"></script>
-    <script src="./exercises/03_arrays.js"></script>
-    <script src="./exercises/04_if_else.js"></script>
-    <script src="./exercises/05_for.js"></script>
+    <title>JS Exercises</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <script src="./exercises/01_variables_and_operators.js"></script> -->
+    <!-- <script src="./exercises/02_strings.js"></script> -->
+    <!-- <script src="./exercises/03_arrays.js"></script> -->
+    <!-- <script src="./exercises/04_if_else.js"></script> -->
+    <!-- <script src="./exercises/05_for.js"></script> -->
     <script src="./exercises/06_functions.js"></script>
 </head>
 <body>
-    
+    <main>
+        <h1 class="title">EXERCISES</h1>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 1-a</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var num1 = 5;</code>
+                <code>var num2 = 10;</code>
+                <code>var total = num1 + num2;</code>
+                <code>console.log('El resultado de la suma es: ',total);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El resultado de la suma es: 15</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 1-b</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var _name = 'Valentín';</code>
+                <code>var lastName = 'Feraudo';</code>
+                <code>var nameLastName = _name + lastName;</code>
+                <code>var nameLastNameSplit = `${_name} ${lastName}`</code>
+                <code>console.log('Concatenadas sin espacio: ',nameLastName);</code>
+                <code>console.log('Concatenadas con espacio: ',nameLastNameSplit);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">Concatenados sin espacio: ValentínFeraudo</span>
+                <span class="text-result">Concatenados con espacio: Valentín Feraudo</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 1-c</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el resultado de la suma en una 3er variable (utilizar length).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var firstWord = 'Diego';</code>
+                <code>var secondWord = 'Maradona';</code>
+                <code>var totalChar = firstWord.length + secondWord.length;</code>
+                <code>console.log('El resultado de la suma de los caracteres es: ',totalChar);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El resultado de la suma de los caracteres es: 13</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 2-a</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var stringLowerCase = 'Mi pueblo se llama San Vicente';</code>
+                <code>var stringUpperCase = stringLowerCase.toUpperCase();</code>
+                <code>console.log('El string pasado a mayúscula es: ',stringUpperCase);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El string pasado a mayúscula es: MI PUEBLO SE LLAMA SAN VICENTE</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 2-b</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var normalString = 'Diego Armando Maradona';</code>
+                <code>var fiveCharString = normalString.substring(0,5);</code>
+                <code>console.log('Los primeros 5 caracteres son: ',fiveCharString);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">Los primeros 5 caracteres son: Diego</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 2-c</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var normalString2 = 'Diego Armando Maradona';</code>
+                <code>var lastThreeChar = normalString.substring(normalString2.length - 3 , normalString2.length);</code>
+                <code>console.log('Los último 3 caracteres son: ',lastThreeChar);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">Los últimos 3 caracteres son: ona</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 2-d</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var longWord = 'valentin feraudo Haciendo EjerCIcIos';</code>
+                <code>var newLongWord = longWord.substring(0,1).toUpperCase() + longWord.substring(1,longWord.length).toLowerCase();</code>
+                <code>console.log('El nuevo string es: ',newLongWord);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El nuevo string es: Valentin feraudo haciendo ejercicios</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 2-e</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var stringWithSpaces = 'Resultado debe ser 9';</code>
+                <code>var indexOfFirstSpace = stringWithSpaces.indexOf(' ');</code>
+                <code>console.log('La posición del primer espacio en blanco es: ',indexOfFirstSpace);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">La posición del primer espacio en blanco es: 9</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 2-f</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos
+                    de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en mayúscula y 
+                    las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var longStringWithSpaces = 'valentin feraudo';</code>
+                <code>var newLongStringWithSpaces = longStringWithSpaces.substring(0,1).toUpperCase() + </code>
+                <code>longStringWithSpaces.substring(1,longStringWithSpaces.indexOf(' ')).toLowerCase() + ' ' +</code>
+                <code>longStringWithSpaces.substring(longStringWithSpaces.indexOf(' ') + 1, longStringWithSpaces.indexOf(' ') + 2).toUpperCase() +</code>
+                <code>longStringWithSpaces.substring(longStringWithSpaces.indexOf(' ') + 2, longStringWithSpaces.length).toLowerCase();</code>
+                <code>console.log('Las nuevas palabras concatenadas y modificadas son: ',newLongStringWithSpaces);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">Las nuevas palabras concatenadas y modificadas son: Valentin Feraudo</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 3-a</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log)</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var monthArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];</code>
+                <code>console.log("El mes 5 es; ",monthArray[4],' ', 'y el mes 11 es: ',monthArray[10]);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El mes 5 es: Mayo y el mes 11 es Noviembre</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 3-b</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var monthArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];</code>
+                <code>monthArray.sort();</code>
+                <code>console.log("El mes ordenado queda: ",monthArray);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El mes ordenado queda:  (12) ['Abril', 'Agosto', 'Diciembre', 'Enero', 'Febrero', 'Julio', 'Junio', 'Marzo', 'Mayo', 'Noviembre', 'Octubre', 'Septiembre']</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 3-c</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Agregar un elemento al principio y al final del array (utilizar unshift y push).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>monthArray.unshift('Primer');</code>
+                <code>monthArray.push('Ultimo');</code>
+                <code>console.log("El arreglo queda: ",monthArray);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El mes arreglo queda:  (14) ['Primer', 'Abril', 'Agosto', 'Diciembre', 'Enero', 'Febrero', 'Julio', 'Junio', 'Marzo', 'Mayo', 'Noviembre', 'Octubre', 'Septiembre', 'Ultimo']</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 3-d</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Quitar un elemento del principio y del final del array (utilizar shift y pop).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>monthArray.shift();</code>
+                <code>monthArray.pop();</code>
+                <code>console.log("El arreglo queda: ",monthArray);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El mes arreglo queda:  (12) ['Abril', 'Agosto', 'Diciembre', 'Enero', 'Febrero', 'Julio', 'Junio', 'Marzo', 'Mayo', 'Noviembre', 'Octubre', 'Septiembre']</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 3-e</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Invertir el orden del array (utilizar reverse).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var monthArrayReverse = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];</code>
+                <code>console.log('El array invertido queda: ',monthArrayReverse.reverse());</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El array invertido queda: (12) ['Diciembre', 'Noviembre', 'Octubre', 'Septiembre', 'Agosto', 'Julio', 'Junio', 'Mayo', 'Abril', 'Marzo', 'Febrero', 'Enero']</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 3-f</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var monthArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];</code>
+                <code>var monthString = monthArray.join('-');</code>
+                <code>console.log('El array unido en string queda: ',monthString);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El array unido en string queda: Enero-Febrero-Marzo-Abril-Mayo-Junio-Julio-Agosto-Septiembre-Octubre-Noviembre-Diciembre  </span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 3-g</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var monthArray2 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];</code>
+                <code>var sliceArray = monthArray2.slice(monthArray2.indexOf('Mayo'),monthArray2.indexOf('Noviembre') + 1);</code>
+                <code>console.log('El array de Mayo a Noviembre queda: ',sliceArray);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El array de Mayo a Noviembre queda: ['Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre']</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 4-a</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var x = Math.random();</code>
+                <code>if (x >= 0.5){</code>
+                <code>console.log('Greater than 0.5');</code>
+                <code>} else {</code>
+                <code>console.log('Lower than 0.5');</code>
+                <code>}</code>
+                </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El resultado depende del random()</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 4-b</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta: “Bebe” si la edad es menor a 2 años; “Nino” si la edad es entre 2 y 12 años; “Adolescente” entre 13 y 19 años; “Joven” entre 20 y 30 años; “Adulto” entre 31 y 60 años; “Adulto mayor” entre 61 y 75 años; “Anciano” si es mayor a 75 años.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var age = Math.floor(Math.random() * 100);</code>
+                <code>if (age < 2){</code>
+                <code>console.log('Bebe');</code>
+                <code>}</code>
+                <code>else if (age >= 2 && age <= 12){</code>
+                <code>console.log('Niño');</code>
+                <code>}</code>
+                <code>else if (age >= 13 && age <= 19){</code>
+                <code>console.log('Adolescente');</code>
+                <code>}</code>
+                <code>else if (age >= 20 && age <= 30){</code>
+                <code>console.log('Joven');</code>
+                <code>}</code>
+                <code>else if (age >= 31 && age <= 60){</code>
+                <code>console.log('Adulto');</code>
+                <code>}</code>
+                <code>else if (age >= 61 && age <= 75){</code>
+                <code>console.log('Adulto mayor');</code>
+                <code>}</code>
+                <code>else if (age > 75){</code>
+                <code>console.log('Anciano');</code>
+                <code>}</code>
+                </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El resultado depende del random()</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 5-a</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var names = ['valentin', 'german', 'eugenio', 'baltazar', 'agustin'];</code>               
+                <code>for (let i = 0; i < names.length; i++) {</code>
+                <code>console.log(names[i]);</code>
+                <code>}</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">valentin</span>
+                <span class="text-result">german</span>
+                <span class="text-result">eugenio</span>
+                <span class="text-result">baltazar</span>
+                <span class="text-result">agustin</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 5-b</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var names2 = ['valentin', 'german', 'eugenio', 'baltazar', 'agustin'];</code>               
+                <code>for (let i = 0; i < names2.length; i++) {</code>
+                <code>console.log(names[i].substring(0,1).toUpperCase() + names[i].substring(1,names[i].lenght));</code>
+                <code>}</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">Valentin</span>
+                <span class="text-result">German</span>
+                <span class="text-result">Eugenio</span>
+                <span class="text-result">Baltazar</span>
+                <span class="text-result">Agustin</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 5-c</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var sentence = '';</code>
+                <code>var names = ['valentin', 'german', 'eugenio', 'baltazar', 'agustin'];</code>
+                <code>for (let i = 0; i < names.length; i++) {</code>
+                <code>sentence = sentence + names[i];</code>
+                <code>}</code>
+                <code>console.log('El arreglo unido en string queda: ', sentence);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El arreglo unido en string queda: valentingermaneugeniobaltazaragustin</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 5-d</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la repetición, 
+                    es decir que al final de la ejecución del bucle for debería haber 10 elementos dentro del array, desde el número 0 hasta al número 9. 
+                    Mostrar por la consola del navegador el array final (utilizar console.log).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>var emptyArray = [];</code>
+                <code>for (let i = 0; i < 10; i++) {</code>
+                <code>emptyArray.push(i);</code>
+                <code>}</code>
+                <code>console.log('Resultado: ',emptyArray)</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">Resultado: (10) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 6-a</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar el resultado en una variable, 
+                    mostrando el valor de dicha variable en la consola del navegador.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>function suma(num1, num2) {</code>
+                <code>return num1 + num2;</code>
+                <code>}</code>
+                <code>var result = suma(5,16);</code>
+                <code>console.log('El resultado de la suma a traves de la funcion es: ',result);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El resultado de la suma a traves de la funcion es: 21</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 6-b</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar el resultado en una variable, 
+                    mostrando el valor de dicha variable en la consola del navegador.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>function sumaValidator(num1, num2) {</code>
+                <code>if (typeof(num1) !== 'number' || typeof(num2) !== 'number'){</code>
+                <code>console.log('Un parámetro tiene error');</code>
+                <code>return NaN;</code>
+                <code>}</code>
+                <code>else{</code>
+                <code>return num1 + num2;</code>
+                <code>}</code>
+                <code>}</code>
+                <code>var result1 = sumaValidator('a',16);</code>
+                <code>console.log('No número, resultado: ',result1);</code>
+                <code>var result2 = sumaValidator(16,16);</code>
+                <code>console.log('Con número, resultado: ',result2);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">Un parámetro tiene error. No número, resultado: NaN</span>
+                <span class="text-result">Con número, resultado: 32</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 6-c</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>function validateInteger(num){</code>
+                <code>return num % 1 === 0;</code>
+                <code>}</code>
+                <code>console.log('Resultado pasando entero: ',validateInteger(10));</code>
+                <code>console.log('Resultado pasando decimal: ',validateInteger(10.4568));</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">Resultado pasando entero: true</span>
+                <span class="text-result">Resultado pasando decimal: false</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 6-d</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>function sumaValidator2(num1, num2) {</code>
+                <code>if (typeof(num1) !== 'number' || typeof(num2) !== 'number'){</code>
+                <code>return NaN;</code>
+                <code>}</code>
+                <code>else{</code>
+                <code>num1 = validateDecimal(num1);</code>
+                <code>num2 = validateDecimal(num2);</code>
+                <code>return num1 + num2;</code>
+                <code>}</code>
+                <code>}</code>
+                <code>function validateDecimal(num) {</code>
+                <code>if(num % 1 !== 0){</code>
+                <code>console.log(`El numero ${num} tiene decimales. Su redondeado es ${Math.round(num)}`);</code>
+                <code>return Math.round(num);</code>
+                <code>}else{</code>
+                <code>return num</code>
+                <code>}</code>
+                <code>}</code>
+                <code>console.log('El resultado de la suma es: ',sumaValidator2(1.5,5));</code>
+                <code>console.log('El resultado de la suma es: ',sumaValidator2(25,5.5));</code>
+                <code>console.log('El resultado de la suma es: ',sumaValidator2(10,5));</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">El numero 1.5 tiene decimales. Su redondeado es 2</span>
+                <span class="text-result">El resultado de la suma es: 7</span>
+                <span class="text-result">El numero 5.5 tiene decimales. Su redondeado es 6</span>
+                <span class="text-result">El resultado de la suma es: 31</span>
+                <span class="text-result">El resultado de la suma es: 15</span>
+            </div>
+        </div>
+        <div class="exercise">
+            <span class="subtitle underline">Ejercicio 6-e</span>
+            <div class="statement">
+                <h2 class="subtitle">Enunciado</h2>
+                <p>Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.</p>
+            </div>
+            <div class="code">
+                <h2 class="subtitle">Codigo</h2>
+                <code>function sumaValidator3(num1, num2) {</code>
+                <code>if (validateNumber(num1) || validateNumber(num2)){</code>
+                <code>return NaN;</code>
+                <code>}</code>
+                <code>else{</code>
+                <code>return num1 + num2;</code>
+                <code>}</code>
+                <code>}</code>
+                <code>function validateNumber(num) {</code>
+                <code>return typeof(num) !== 'number';</code>
+                <code>}</code>
+                <code>var result = sumaValidator3('a',16);</code>
+                <code>console.log(result);</code>
+                <code>var result = sumaValidator3(16,16);</code>
+                <code>console.log(result);</code>
+            </div>
+            <div class="result">
+                <h2 class="subtitle">Resultado</h2>
+                <span class="text-result">NaN</span>
+                <span class="text-result">32</span>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

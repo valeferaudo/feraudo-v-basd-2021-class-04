@@ -1,0 +1,46 @@
+main {
+    padding: 30px;
+}
+code {
+    display: block;
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+}
+.exercise {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+.statement{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+.code{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+.result{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+.subtitle{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.underline{
+    text-decoration: underline;
+}
+.text-result{
+    display: block;
+    color: #016401;
+    background-color: #f1f1f1;
+}

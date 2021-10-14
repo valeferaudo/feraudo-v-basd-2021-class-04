@@ -9,7 +9,7 @@ console.log(monthArray[4],monthArray[10]);
         
 console.log('Ejercicio 3-b');
 monthArray.sort();
-console.log(monthArray)
+console.log("El mes ordenado queda: ",monthArray);
         
 // c - Agregar un elemento al principio y al final del array (utilizar unshift y push).
 
